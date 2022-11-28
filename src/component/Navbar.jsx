@@ -3,11 +3,18 @@ import "../css/navbar.css";
 // import "../script";
 // import { Helmet } from "react-helmet";
 //rafce
+function click() {
+  const hamburger = document.getElementsByClassName("hamburger")[0];
+  const menu = document.getElementsByClassName("menu")[0];
+  hamburger.classList.toggle("hamburger_active");
+  menu.classList.toggle("menu_active");
+}
+
 const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="#" className="logo"></a>
-      <div className="hamburger">
+      <div className="hamburger" onClick={click}>
         <span className="hamburger__item"></span>
         <span className="hamburger__item"></span>
         <span className="hamburger__item"></span>

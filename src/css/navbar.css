@@ -28,6 +28,7 @@
 }
 .menu__list {
   list-style: none;
+  margin: 16px 0;
 }
 .menu__link {
   text-decoration: none;
@@ -51,11 +52,6 @@
 }
 
 @media (max-width: 768px) {
-  /* .navbar {
-    justify-content: center;
-    gap: 0 200px;
-  } */
-
   .hamburger {
     display: block;
   }
@@ -66,13 +62,12 @@
     transform: translateY(8px) rotate(45deg);
   }
   .hamburger_active .hamburger__item:nth-child(3) {
-    transform: translateX(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
   .menu {
     position: fixed;
     left: -100%;
     top: 90px;
-    gap: 20px 0;
     background-color: var(--bg-color);
     flex-direction: column;
     width: 100%;
